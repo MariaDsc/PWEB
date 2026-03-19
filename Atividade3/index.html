@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>API e Integrações</h2>
+        <h3>Conceitos, Tipos, Ferramentas e Aplicações</h3>
+        <br>
+    </header>
+
+    <main>
+        <article>
+            <ol>
+                <li>
+                    <span class="numero">01</span>
+                    <h2>Introdução</h2>
+                    <p>Hodiernamente, com o crescimento dos serviços digitais, das plataformas em nuvem e dos
+                        aplicativos móveis, a necessidade de empresas e sistemas digitais se comunicarem com maior
+                        frequência e rapidez passou a ser imperativo. É sob esse panorama que as APIs — sigla para
+                        Application Programming Interface — tornaram-se ferramentas essenciais no dia a dia da
+                        tecnologia da informação. Dessa forma, entender o que são APIs, como funcionam e quais
+                        ferramentas existem para utilizá-las tornou-se importante tanto para desenvolvedores quanto para
+                        gestores de tecnologia.</p>
+                    <p>Este trabalho, de tal modo, organiza esse conteúdo em tópicos que vão dos conceitos básicos às
+                        aplicações práticas, passando pelos principais tipos, arquiteturas e ferramentas disponíveis no
+                        mercado.</p>
+                </li>
+
+                <li>
+                    <span class="numero">02</span>
+                    <h2>Fundamentos Conceituais</h2>
+                    <ol>
+                        <li>
+                            <h3>O que é uma API</h3>
+                            <p>Conceitualmente, uma API é um conjunto de regras que define como dois sistemas podem se
+                                comunicar. Ela funciona como um contrato, especificando o que pode ser solicitado, como
+                                fazer essa solicitação e o que será retornado como resposta. Dessa maneira, podemos
+                                dizer que uma API funciona como uma ponte entre dois sistemas, atuando como uma “camada
+                                intermediária” que padroniza a troca de dados e a execução de ações entre estes, os
+                                quais não precisam conhecer os detalhes internos um do outro.</p>
+                            <p>
+                                Um exemplo simples é o de um aplicativo de clima que exibe a previsão do tempo. Nesse
+                                caso, o aplicativo não coleta os dados meteorológicos por conta própria, mas sim
+                                consulta uma API de clima, que retorna as informações já processadas e prontas para
+                                exibição.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3>Como uma API funciona</h3>
+                            <p>
+                                O funcionamento de uma API envolve, de forma geral, quatro etapas. Primeiro, o sistema
+                                interessado envia uma <strong>requisição</strong> ao endereço da API, chamado de
+                                <em>endpoint</em>. Em seguida, a API verifica se o solicitante tem permissão para
+                                acessar aquele recurso, por meio de mecanismos de <strong>autenticação</strong>. Depois
+                                disso, a API <strong>processa o pedido</strong> e, por fim, retorna uma
+                                <strong>resposta</strong> com os dados solicitados, geralmente no formato JSON — uma
+                                estrutura de texto simples e organizada.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3>Por que as APIs são importantes</h3>
+                            <p>As APIs são importantes porque permitem que sistemas diferentes trabalhem juntos sem
+                                depender dos mesmos fornecedores ou tecnologias. Além disso, elas permitem que empresas
+                                ofereçam suas funcionalidades como serviço, abrindo novas possibilidades de negócio. Por
+                                isso, o conceito de "economia de APIs" ganhou força nos últimos anos, descrevendo um
+                                modelo em que dados e capacidades tecnológicas são compartilhados como produtos
+                                digitais.</p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <span class="numero">03</span>
+                    <h2>Tipos de API</h2>
+                    <ol>
+                        <li>
+                            <h3>Quanto ao público de acesso</h3>
+                            <p>As APIs podem ser classificadas de acordo com quem tem permissão para utilizá-las. As
+                                <strong>APIs públicas</strong> estão disponíveis para qualquer desenvolvedor, mediante
+                                cadastro. Já as <strong>APIs privadas</strong> são utilizadas apenas internamente por
+                                uma organização, sem acesso externo. Por sua vez, as <strong>APIs de parceiros</strong>
+                                são compartilhadas somente com empresas ou pessoas previamente autorizadas, geralmente
+                                por meio de contratos.</p>
+                        </li>
+
+                        <li>
+                            <h3>Quanto ao modelo de entrega</h3>
+                            <p>Além disso, as APIs também se diferenciam pelo modo como funcionam tecnicamente. As
+                                <strong>APIs Web </strong> são as mais comuns e operam pela internet, utilizando o
+                                protocolo HTTP. As <strong>APIs de biblioteca </strong>funcionam diretamente no ambiente
+                                de programação, sem necessidade de conexão com a rede. Já as <strong>APIs de sistema
+                                    operacional</strong> permitem que programas acessem recursos do computador, como
+                                arquivos e dispositivos.</p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <span class="numero">04</span>
+                    <h2>Arquiteturas de Integração</h2>
+                    <ol>
+                        <li>
+                            <h3>REST</h3>
+                            <p>A arquitetura REST é atualmente a mais utilizada para o desenvolvimento de APIs Web. Ela
+                                se baseia no protocolo HTTP e organiza a comunicação em torno de recursos identificados
+                                por URLs. Assim, operações como <strong>buscar, criar, atualizar e deletar dados
+                                </strong>são representadas pelos métodos <strong>GET, POST, PUT e DELETE</strong>,
+                                respectivamente. Por ser simples, leve e amplamente suportada, tornou-se o padrão
+                                preferido na maioria dos projetos modernos.</p>
+                        </li>
+
+                        <li>
+                            <h3>
+                                SOAP
+                            </h3>
+                            <p>
+                                O SOAP é um protocolo mais antigo e mais rígido, baseado em mensagens no formato XML.
+                                Embora seja menos flexível que o REST, ainda é amplamente utilizado em ambientes
+                                corporativos e financeiros, onde há exigências rigorosas de segurança e rastreabilidade.
+                                Por isso, sistemas bancários e governamentais frequentemente ainda o adotam.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3>
+                                GraphQL
+                            </h3>
+                            <p>O GraphQL é uma alternativa mais recente, desenvolvida pelo Facebook em 2015.
+                                Diferentemente do REST, ele permite que o consumidor especifique exatamente quais dados
+                                deseja receber, evitando o envio de informações desnecessárias. Assim, é especialmente
+                                útil em aplicações móveis, onde o consumo de dados deve ser otimizado.</p>
+                        </li>
+
+                        <li>
+                            <h3>
+                                Webhooks
+                            </h3>
+                            <p>Os <em>webhooks</em> funcionam de forma diferente das APIs tradicionais. Em vez de o consumidor fazer uma solicitação e aguardar uma resposta, o próprio sistema provedor envia uma notificação automaticamente quando determinado evento ocorre. Por esse motivo, são muito utilizados em integrações que exigem resposta em tempo real, como confirmações de pagamento e alertas de entrega.</p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <span class="numero">05</span>
+                    <h2>Ferramentas de Suporte</h2>
+                    <ol>
+                        <li>
+                            <h3>Ferramentas de teste e desenvolvimento</h3>
+                            <p>Para criar e testar APIs, existem diversas ferramentas disponíveis. O <strong>Postman</strong> é uma das mais populares, permitindo enviar requisições, visualizar respostas e automatizar testes de forma simples. Já o <strong>Insomnia</strong> oferece uma alternativa mais leve, com foco na produtividade do desenvolvedor. Além disso, o <strong>Swagger</strong> permite documentar e visualizar APIs de forma interativa, facilitando o entendimento por parte de outros desenvolvedores.</p>
+                        </li>
+
+                        <li>
+                            <h3>Ferramentas de integração sem código</h3>
+                            <p>
+                                Para quem não tem familiaridade com programação, existem plataformas que permitem criar integrações de forma visual, sem escrever código. O <strong>Zapier</strong> e o <strong>Make</strong> (antigo Integromat)
+                                são exemplos consolidados, possibilitando a conexão entre centenas de aplicativos por
+                                meio de fluxos automatizados. Da mesma forma, o <strong>n8n</strong> oferece recursos semelhantes com uma
+                                opção de uso em servidores próprios, o que garante mais controle sobre os dados.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3>Plataformas de gerenciamento de APIs</h3>
+                            <p>Em ambientes corporativos, o gerenciamento de múltiplas APIs exige ferramentas especializadas. O <strong>AWS API Gateway</strong>, o <strong>Kong</strong> e o <strong>Apigee</strong> são exemplos de plataformas que centralizam o controle de acesso, monitoramento, segurança e desempenho das APIs em uso. Dessa forma, as organizações conseguem escalar suas integrações com mais segurança e eficiência.</p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h2>Exemplos Práticos</h2>
+                    <p>As APIs estão presentes em diversas situações do cotidiano digital. Quando um usuário clica em "Entrar com Google" em um site, por exemplo, está utilizando uma API de autenticação. Da mesma forma, ao rastrear uma encomenda em um aplicativo de e-commerce, o sistema consulta a API da transportadora para obter as informações de localização em tempo real.</p>
+                    <p>Além disso, plataformas de pagamento como o Stripe e o Mercado Pago disponibilizam APIs que permitem a qualquer loja virtual processar cobranças sem desenvolver sua própria infraestrutura financeira. No setor da saúde, APIs são utilizadas para integrar prontuários eletrônicos com sistemas de laboratório e farmácias. Já no mercado financeiro, corretoras utilizam APIs para receber cotações em tempo real e executar ordens de compra e venda de ativos automaticamente.</p>
+                </li>
+
+                <li>
+                    <h2>Conclusão</h2>
+                    <p>As APIs consolidaram-se como peças fundamentais da infraestrutura digital moderna. Por meio delas, sistemas distintos conseguem se comunicar de forma padronizada, segura e eficiente, viabilizando desde integrações simples entre aplicativos até arquiteturas complexas de serviços distribuídos. Além disso, a variedade de tipos, arquiteturas e ferramentas disponíveis permite que tanto desenvolvedores experientes quanto profissionais sem conhecimento técnico aprofundado possam se beneficiar dessas tecnologias.</p>
+                    <p>Portanto, compreender os fundamentos das APIs e das integrações de sistemas é cada vez mais relevante em um cenário onde a transformação digital avança em todos os setores da economia. Assim, investir nesse conhecimento representa não apenas um ganho técnico, mas também uma vantagem estratégica para organizações que buscam agilidade, escalabilidade e inovação em seus processos.</p>
+                </li>
+        </article>
+    </main>
+</body>
+
+</html>

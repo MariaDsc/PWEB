@@ -1,0 +1,92 @@
+/* Fonte do Google Fonts pra deixar mais bonito */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+
+body {
+  background-color: #f7f5f2;   /* Cor de fundo bege claro */
+  color: #1a1816;               /* Cor do texto principal */
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;             /* Espessura do texto */
+  line-height: 1.75;            /* Espaço entre linhas */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #1a1816;   /* Fundo escuro */
+  color: #f7f5f2;              /* Texto claro */
+  padding: 20px 12px;          /* Espaçamento interno */
+  text-align: center;
+}
+
+/* Título principal no cabeçalho */
+header h2 {
+  font-family: 'DM Serif Display', serif;
+  color: #f7f5f2;
+  font-size: 48px;             
+  font-weight: 400;
+}
+
+/* Subtítulo no cabeçalho */
+header h3 {
+  margin-top: 10px;
+  font-weight: 300;
+  color: rgba(247, 245, 242, 0.55);  /* Branco semi-transparente */
+  text-transform: uppercase;         /* Texto em maiúsculas */
+}
+
+/* Área principal do conteúdo */
+main {
+  max-width: 720px;            /* Largura máxima */
+  margin: 0 auto;              /* Centraliza horizontalmente */
+  padding: 48px 40px 96px;     /* Espaçamento interno */
+}
+
+/* Lista principal (seções)*/
+article > ol {
+  list-style: none;            /* Remove números padrão da lista */
+  gap: 48px;                   /* Espaço entre os itens */
+}
+
+/* Títulos de seção */
+h2 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 29px;          
+  color: #1a1816;
+  margin-bottom: 18px;
+}
+
+/* Subtítulos dentro das seções */
+h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #7a7470;              /* Cinza médio */
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+/* Lista interna (subseções) */
+article > ol > li > ol {
+  list-style: none;    /* Remove os números padrão da lista */
+  gap: 20px;
+}
+
+/* Parágrafos */
+p {
+  color: #3d3a37;
+  margin-bottom: 14px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* Números em cima de cada topico */
+.numero {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #c0392b;
+  margin-bottom: 6px;
+}
