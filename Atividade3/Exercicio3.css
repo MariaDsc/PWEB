@@ -1,0 +1,44 @@
+body{
+    font-family: "Segoe UI", Tahoma;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;   /*mais importante*/
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 15px;/*espaço entre os cards*/
+}
+
+.card{
+    flex-basis: calc(100%/3 - 20px); /*tamanho inicial do item*/
+    background-color: HSL(250, 42%, 43%);
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgba(125, 6, 6, 0.2), 
+    5px 5px 10px 5px #187b8d;   /* 2 camadas de sombra */
+
+    /* Primeira Sombra: */
+    /* 2px: Deslocamento horizontal da sombra. 
+    Um valor positivo desloca a sombra para a direita */
+    /* 2px: Deslocamento vertical da sombra. 
+    Um valor positivo desloca a sombra para baixo */
+    /* 5px: Raio de desfoque da sombra. 
+    Quanto maior o valor, mais borrada a sombra fica */
+    /* 2px: Raio de propagação da sombra. 
+    Um valor positivo aumenta o tamanho da sombra, enquanto um valor negativo diminui */
+
+    height: 200px;
+}
+
+.card h2{
+    margin-top:0;
+}
+
+.card p{
+    margin-top:10px 0;
+}
