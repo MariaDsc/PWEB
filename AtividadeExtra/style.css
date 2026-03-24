@@ -1,0 +1,236 @@
+/* Configuração geral*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+/* Container centraliza o conteúdo */
+.container {
+    width: 90%;   /* Largura ocupando 90% da tela */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CABEÇALHO */
+.header {
+    background-color: #141414;
+    padding: 20px 0; 
+    position: fixed;   /* fixa o header no topo da tela (não sai ao rolar a página) */
+    top: 0;
+    width: 100%;     /* vai de uma ponta a outra */
+    z-index: 100;   /* fica sobre todos os elementos */
+}
+
+/* Organiza os elementos DENTRO do header (logo, menu, ícone do usuário) */
+.header .container {
+    display: flex;    /* ativa o Flexbox - coloca os itens um ao lado do outro */
+    justify-content: space-between;   /* espaço entre os itens: logo no início, menu no meio, user no fim */
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;  
+    height: auto;  /* mantém a proporção original */
+}
+
+/* Menu de navegação */
+.nav ul {
+    list-style: none;   /* tira as bolinhas/pontos que aparecem antes de cada item da lista */
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;  /* tira o sublinhado que aparece embaixo dos links */
+    font-size: 14px;
+}
+
+/* Efeito quando o usuário passa o mouse sobre os links do menu */
+.nav a:hover {
+    color: #e50914;
+}
+
+.user-menu span {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* BANNER PRINCIPAL (HERO) */
+.hero {
+    position: relative;    /* "ponto de referência" */
+    height: 600px;
+    display: flex;
+    align-items: center;
+    margin-top: 68px;
+    padding: 0 5%;      /* distancia entre o texto e a tela */
+    height: 600px;
+    overflow: hidden;  /* a imagem vai ser esticada para cobrir >> esse atributo coloca uma espécie de moldura (se passar dos 600px, não aparece) */
+}
+
+.hero-bg {
+    position: absolute;   /* em relação ao .hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* Faz a imagem cobrir todo o espaço sem distorcer */
+    z-index: 1;  /* Fica no fundo (nº maior = acima) */
+}
+
+/* Escurece a imagem para o texto ficar legível */
+/* pseudoelemento (::) >> "elemento fantasma" (não precisa ser criado no html)*/
+.hero::after {
+    content: "";    /* Obrigatório para aparecerem */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);   /* 0.6 = 60% de opacidade */
+    z-index: 2;    /* fica sobre a imagem */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;         /* fica sobre tudo */
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;  /* Espaço abaixo do título */
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.5;  /* Altura entre linhas (1.5 = 50% maior que o tamanho da fonte) */
+    margin-bottom: 30px;  
+}
+
+/* Botões do banner */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-play, .btn-info {
+    padding: 10px 25px; /* espaçamento interno: 10px em cima/baixo, 25px nas laterais */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;  /* remove a borda padrão dos botões */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-play {
+    background-color: white;
+    color: black;
+}
+
+/* Efeito ao passar o mouse no botão Assistir */
+.btn-play:hover {
+    background-color: rgba(255,255,255,0.8); /* fica 80% opaco (mais transparente) */
+}
+
+.btn-info {
+    background-color: rgba(109, 109, 110, 0.7); /* Cinza com 70% de opacidade */
+    color: white;
+}
+
+/* Efeito ao passar o mouse no botão Mais informações */
+.btn-info:hover {
+    background-color: rgba(109, 109, 110, 0.5);
+}
+
+/* SEÇÕES DE FILMES/SÉRIES */
+.main {
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.movie-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* Linha de filmes (rolagem horizontal) */
+.movie-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;  /* Permite rolagem horizontal */
+    padding: 10px;
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+
+/* PERSONALIZAÇÃO DA BARRA DE ROLAGEM */
+.movie-row::-webkit-scrollbar {
+    height: 8px;               /* Altura da barra de rolagem (mais fina) */
+}
+
+/* Estiliza o "trilho" por onde a barra desliza */
+.movie-row::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+.movie-row::-webkit-scrollbar-thumb {
+    background: #e50914;
+    border-radius: 4px;
+}
+
+/* Card de cada filme */
+.movie-card {
+    flex-shrink: 0;  /* impede que o card encolha quando não há espaço */
+    width: 200px;
+    transition: transform 0.3s ease; /* Animação suave de 0.3 segundos para o hover */
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);  /* Efeito ao passar o mouse (card aumenta 5%)*/
+}
+
+.movie-card img {
+    width: 100%;   /* Ocupa 100% da largura do card (200px) */
+    height: 280px;  /* Altura fixa para todas as imagens */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-info {
+    padding: 8px 0;   /* 8px em cima/baixo, 0 nas laterais */
+}
+
+/* Estilizar o parágrafo */
+.movie-info p {
+    font-size: 14px;
+    text-align: center;
+    text-overflow: ellipsis;  /* Adiciona os três pontinhos (...) quando o titulo for muito longo*/
+}
+
+/* RODAPÉ */
+.footer {
+    background-color: #141414;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #2c2c2c;
+    margin-top: 20px;
+}
+
+.footer p {
+    color: #808080;
+    font-size: 12px;
+}
