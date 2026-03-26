@@ -1,0 +1,166 @@
+/* geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+a:hover {
+    color: #cc0000;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
+.header {
+    background-color: #000;
+    border-bottom: 3px solid #cc0000;
+    padding: 10px 30px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* Menu de navegação */
+.nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+.nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 6px 10px;
+}
+
+.nav ul li a:hover {
+    color: #cc0000;
+}
+
+/* Ícones de lupa e usuário */
+.user-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-search img {
+    width: 20px;
+}
+
+.user-search span {
+    color: #666;
+}
+
+/* MAIN */
+.main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* afeta apenas o .container filho direto de .main */
+.main > .container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Conteúdo principal (esquerda) */
+.conteudo-principal {
+    flex: 1; /* elemento vai ocupar todo o espaço disponível que sobrar no container*/
+}
+
+/* Título principal */
+.conteudo-principal h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-left: 4px solid #cc0000;
+    padding-left: 10px;
+}
+
+/* Lista de notícias */
+.conteudo-principal ul {
+    margin-bottom: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.conteudo-principal ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.conteudo-principal ul li h3 {
+    font-size: 15px;
+}
+
+.conteudo-principal ul li h4 {
+    font-size: 13px;
+    color: #666;
+}
+
+/* BOXES (3 notícias)*/
+.container-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais >> forma mais fácil ao invés de ficar colocando porcentagem pra cada um e descontando as bordas */
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #fff;
+    border-top: 3px solid #cc0000;
+    padding: 12px;
+}
+
+.box h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.box p {
+    font-size: 14px;
+    color: #666;
+}
+
+.box img {
+    width: 100%;
+    height: 180px;       
+    object-fit: cover;   
+    display: block;
+    padding: 8px;
+}
+
+/* ASIDE (lateral direita) */
+.lateral {
+    width: 260px;
+    border-left: 3px solid #cc0000;
+    padding-left: 15px;
+}
+
+.lateral h3 {
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
