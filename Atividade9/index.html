@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Teste das Funções</h1>
+
+  <div class="bloco">
+    <h2>Maior número</h2>
+    <input id="n1" type="number" placeholder="num 1">
+    <input id="n2" type="number" placeholder="num 2">
+    <input id="n3" type="number" placeholder="num 3">
+    <button onclick="testarMaior()">Testar</button>
+    <p id="res-maior"></p>
+  </div>
+
+  <div class="bloco">
+    <h2>Ordenar</h2>
+    <input id="ord" placeholder="números separados por vírgula">
+    <button onclick="testarOrdenar()">Testar</button>
+    <p id="res-ordenar"></p>
+  </div>
+
+  <div class="bloco">
+    <h2>É palíndromo?</h2>
+    <input id="pal" placeholder="palavra">
+    <button onclick="testarPalindromo()">Testar</button>
+    <p id="res-palindromo"></p>
+  </div>
+
+  <div class="bloco">
+    <h2>É subconjunto?</h2>
+    <input id="sub1" placeholder="palavra 1">
+    <input id="sub2" placeholder="palavra 2">
+    <button onclick="testarSubconjunto()">Testar</button>
+    <p id="res-subconjunto"></p>
+  </div>
+
+  <div class="bloco">
+    <h2>Dia da semana</h2>
+    <input id="data" type="date">
+    <button onclick="testarDia()">Testar</button>
+    <p id="res-dia"></p>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
