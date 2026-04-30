@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11</title>
+</head>
+<body>
+    <script>
+
+        //por classe:
+        class Funcionario{
+            constructor(){
+                this.matricula;
+                this.nome;
+                this.funcao;
+            }
+            setMatricula(value){
+                this.matricula = value;
+            }
+            setNome(value){
+                this.nome = value;
+            }
+            setFuncao(value){
+                this.funcao = value;
+            }
+            getMatricula(){
+                return this.matricula;
+            }
+            getNome(){
+                return this.nome;
+            }
+            getFuncao(){
+                return this.funcao;
+            }
+        }
+        var objFunc = new Funcionario();
+        objFunc.setMatricula("12345");
+        objFunc.setNome("Tadeu");
+        objFunc.setFuncao("Vendas");
+        alert(`Matrícula: ${objFunc.getMatricula()}
+                Nome: ${objFunc.getNome()}
+                Função: ${objFunc.getFuncao()}`);
+
+
+        //por função construtora:
+        function Funcionario1(matricula, nome, funcao){
+            this.matricula = matricula;
+            this.nome = nome;
+            this.funcao = funcao;
+
+            this.MostraDados = function(){
+                return ("Matrícula: " + this.matricula + " Nome: " + this.nome + " Função: " + this.funcao);
+            }
+        }
+        var func1 = new Funcionario1("0002","Cecília", "RH");
+        alert(func1.MostraDados());
+
+        //por object
+        var func2 = new Object();
+        func2.matricula = "00001";
+        func2.nome = "Rafael";
+        func2.funcao = "Marketing";
+        alert(`Matrícula: ${func2.matricula}
+                Nome: ${func2.nome}
+                Função: ${func2.nome}`);
+    </script>
+    
+</body>
+</html>
