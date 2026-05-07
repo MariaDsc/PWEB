@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 12</title>
+</head>
+
+<body>
+    <h2>Criar Conta </h2>
+
+    <input id="nome" placeholder="Nome"><br>
+    <input id="banco" placeholder="Banco"><br>
+    <input id="numero" placeholder="Número da conta"><br>
+    <input id="saldo" placeholder="Saldo"><br>
+
+    <h3>Tipo de conta</h3>
+
+    <label>
+        <input type="radio" name="tipo" value="corrente" checked>
+        Corrente
+    </label>
+
+    <label>
+        <input type="radio" name="tipo" value="poupanca">
+        Poupança
+    </label>
+
+    <br><br>
+
+    <button onclick="criarConta()">Criar Conta</button>
+    <button onclick="limpar()">Limpar</button>
+    <br>
+
+    
+
+    <script src = "script.js"></script>
+
+</body>
+
+</html>
