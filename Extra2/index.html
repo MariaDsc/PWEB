@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Alunos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Cadastro de Alunos</h1>
+
+  <!-- formulário com os campos do aluno -->
+  <div id="formulario">
+
+    <label>Nome Completo:</label>
+    <input type="text" id="nome" placeholder="Ex: João Silva">
+
+    <label>RA:</label>
+    <input type="text" id="ra" placeholder="Ex: 12345">
+
+    <label>Nota 1:</label>
+    <input type="number" id="nota1" placeholder="0 a 10">
+
+    <label>Nota 2:</label>
+    <input type="number" id="nota2" placeholder="0 a 10">
+
+    <label>Nota 3:</label>
+    <input type="number" id="nota3" placeholder="0 a 10">
+
+    <!-- mensagem de erro se algo estiver errado -->
+    <p id="erro"></p>
+
+    <button onclick="adicionarAluno()">Adicionar Aluno</button>
+    <button onclick="mostrarMediaGeral()">Finalizar e Ver Média Geral</button>
+
+  </div>
+
+  <!-- lista de alunos vai aparecendo aqui embaixo -->
+  <div id="listaAlunos">
+    <h2>Alunos cadastrados:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>RA</th>
+          <th>Média</th>
+        </tr>
+      </thead>
+      <!-- linhas com os alunos -->
+      <tbody id="corpoTabela"></tbody>
+    </table>
+  </div>
+
+  <!-- média geral  -->
+  <div id="mediaGeral"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
