@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maria Luiza S. Caroquer">
+    <meta name="description" content="Portfólio de Maria Luiza S. Caroquer - Desenvolvedor Web">
+    <meta name="keyords" content="Desenvolvedor, Web, HTML, CSS, JavaScript, Portfólio, Maria Luiza, Caroquer">
+    <title>Portfólio Maria Luiza S. Caroquer - Desenvolvedor Web</title>
+</head>
+
+<body>
+    <!-- Tags semânticas para acessibilidade
+     >> carregam significados independente da apresentação visual + melhora SEO-->
+    <header class="header-1">
+
+        <!-- Menu de navegação -->
+        <nav class="nav bd-grid">
+            <div>
+                <!-- a = tag de link -->
+                <a href="#home" class="nav-logo">Maria Luiza S. Caroquer</a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <!-- ul = lista não ordenada (se fosse ordenada seria ol) -->
+                <!-- Só o primeiro fica ativo, pois é onde começa -->
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#formation" class="nav-link">Formação</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- identificadores criado acima vão no id -->
+        <section class="home bd-grid" id="home">
+            <div class="home-data">
+                <!-- <br>= quebra de linha -->
+                <!-- <h1> a <h6> = titulos -->
+                <!-- <span> = muda o estilo -->
+                <h1 class="home-title">Olá,<br>Eu sou o
+                    <span class="home-title-color">Maria Luiza S. Caroquer
+                    </span><br>Desenvolvedor Web
+                </h1>
+                <a href="#contact" class="button">Contato</a>
+            </div>
+
+            <div class="home-img">
+                <br>
+                <br>
+                <!-- . = subpasta do diretório atual -->
+                <!-- alt = usado para leitores não visuais -->
+                <img src="./images/profile.png" width="300" height="300" alt="foto de Maria Luiza S. Caroquer"
+                    title="Maria Luiza" />
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section-title">Sobre mim</h2>
+
+            <div class="about-container bd-grid">
+
+                <div>
+                    <h3 class="about-subtitle"> Trajetória</h3>
+                    <p class="about-text">
+                        Minha relação com tecnologia começou com curiosidade, mas foi marcada por
+                        dúvidas. Durante anos achei que programação não era para mim - até decidir
+                        tentar de verdade. Passei em primeiro lugar na Fatec, e a cada semestre
+                        descobri que não só era capaz, como realmente me identificava com a área.
+                    </p>
+                    <p>
+                        Hoje, como estudante do 5º semestre de Análise e Desenvolvimento de Sistemas,
+                        me especializo em desenvolvimento e resolução de problemas.
+                    </p>
+                    <p>
+                        O que me move é a possibilidade de criar soluções que facilitem a vida das
+                        pessoas e causem impacto positivo.
+                        Acredito em aprendizado contínuo, trabalho colaborativo e tecnologia com
+                        propósito. Estou em busca de oportunidades que me desafiem a crescer tanto
+                        tecnicamente quanto como profissional.
+                    </p>
+                    <pre> Estou à disposição para novas oportunidades!</pre>
+
+                    <br>
+                    <br>
+
+                    <h3>Minha Filosofia</h3>
+                    <blockquote>
+                        <p>"A tarefa não é tanto ver aquilo que ninguém viu, mas pensar o que ninguém ainda pensou sobre
+                            aquilo que todo mundo vê."</p>
+                        <cite>— Arthur Schopenhauer</cite>
+                    </blockquote>
+                    <p>
+                        Busco olhar problemas comuns com olhar novo. Tecnologia me atrai justamente
+                        por isso: a possibilidade de transformar observações do cotidiano em soluções
+                        criativas que facilitem ou transformem a vida das pessoas de alguma forma.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="formation section" id="formation">
+            <h2 class="section-title">Formação</h2>
+            <div class="formation-container bd-grid">
+                <h3><u>Graduação</u></h3>
+                <p>Tecnologia em ADS<br>
+                    Fatec Sorocaba - SP <br>
+                    Término previsto: dez/2027
+                </p>
+                <h3><u>Complementar</u></h3>
+                <ol>
+                    <li>Python - Huawei</li>
+                    <li>C - Fatec</li>
+                    <li>Java - Fatec</li>
+                    <li> C# - Fatec</li>
+                    <li> JavaScript - Curso em Vídeo</li>
+                    <li>SQL - Fatec</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="skils section" id="skills">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-container bd-grid">
+                <div>
+                    <h2 class="skills-subtitle">Habilidades Profissionais</h2>
+                    <p class="'skills-text">Minhas habilidades baseiam-se no
+                        <strong>desenvolvimento fullstack</strong> com foco em
+                        <b>desenvolvimento web</b>, incluindo <abbr title="HyperText Markup language">HTML</abbr>,
+                        CSS, JavaScript e vários <i>frameworks</i>
+                    </p>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="skills-bar skills-html"></div>
+                        <div>
+                            <span class="skills-percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skills-names">
+                            <div class="skills-bar skills-css"></div>
+                            <div>
+                                <span class="skills-percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skills-names">
+                                <p>JAVASCRIPT</p>
+                            </div>
+                            <div class="skills-bar skills-js"></div>
+                            <div>
+                                <span class="skills-percentage">70%</span>
+                            </div>
+                        </div>
+
+                        <h3>Soft Skills</h3>
+                        <!-- <dl> topicos e substopicos em arvore-->
+                        html<section>
+                            <h2>Soft Skills</h2>
+                            <dl>
+                                <dt><em>Raciocínio Lógico</em></dt>
+                                <dd>Capacidade de analisar problemas, quebrar em partes menores e pensar em soluções
+                                    estruturadas.</dd><br>
+
+                                <dt><em>Comprometimento</em></dt>
+                                <dd>Dedicação completa aos objetivos assumidos, com foco em entregar resultados de
+                                    qualidade.</dd><br>
+
+                                <dt><em>Autonomia para Aprender</em></dt>
+                                <dd>Iniciativa para buscar conhecimento por conta própria, sem depender apenas de
+                                    orientação externa.</dd><br>
+
+                                <dt><em>Adaptabilidade</em></dt>
+                                <dd>Flexibilidade para se ajustar a mudanças e aprender novas tecnologias rapidamente.
+                                </dd><br>
+
+                                <dt><em>Organização</em></dt>
+                                <dd>Habilidade de priorizar tarefas, gerenciar tempo e manter processos estruturados.
+                                </dd><br>
+
+                                <dt><em>Trabalho em Equipe</em></dt>
+                                <dd>Capacidade de colaborar, ouvir diferentes perspectivas e contribuir para objetivos
+                                    coletivos.</dd><br>
+
+                                <dt><em>Persistência</em></dt>
+                                <dd>Determinação para continuar mesmo diante de desafios, buscando soluções até o fim.
+                                </dd><br>
+
+                                <dt><em>Proatividade</em></dt>
+                                <dd>Iniciativa para identificar problemas e propor soluções antes que sejam solicitadas.
+                                </dd><br>
+
+                                <dt><em>Atenção aos Detalhe</em></dt>
+                                <dd>Cuidado com <mark>precisão</mark> e qualidade em cada entrega, minimizando erros.</dd><br>
+
+                                <dt><em>Curiosidade</em></dt>
+                                <dd>Interesse genuíno em entender como as coisas funcionam e vontade constante de
+                                    aprender mais.</dd><br>
+
+                                <dt><em>Humildade para Aprende</em>r</dt>
+                                <dd>Reconhecimento dos próprios limites e abertura para receber feedback e evoluir.</dd><br>
+                            </dl>
+                    </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projetos</h2>
+
+            <div class="projects-text">
+                <h3>Tabela de Projetos</h3>
+                <br>
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Projeto</th>
+                            <th>Tecnologias</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Site Pessoal</td>
+                            <td>HTML, CSS, JS</td>
+                            <td>Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>Jogo web personalizado de aniversário</td>
+                            <td>HTML, CSS, JS</td>
+                            <td>Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>Site Institucional da Alpha</td>
+                            <td>React, Node.js</td>
+                            <td><del>Em progresso</del>Concluído</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="projects-container bd-grid">
+                <div class="projects-img">
+                    <figure> 
+                    <!-- target = vai abrir uma pagina em branco -->
+                        <a href="seu endereco git" target="_blank">
+                            <img src="./images/project-1.jpg" alt=""
+                            width="300" height="300">
+                        </a>
+                        <figcaption>Projeto Site Pessoal</figcaption>
+                    </figure>
+                </div>
+                <div class="projects-img">
+                    <figure> 
+                        <a href="https://mariadsc.github.io/Doors-birthday-game/" target="_blank">
+                            <img src="./images/Doors.png" alt=""
+                            width="300" height="300">
+                        </a>
+                        <figcaption>Projeto Jogo Doors - Edição de Aniversário</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-container bd-grid">
+
+                <a href="@marialucaroquer">
+                    <img src="./images/insta.png" width="100"
+                    height="100" alt="logo do Instagram">
+                </a>
+
+                <a href="https://wa.me/5515991346042">
+                    <img src=".images/whatsapp.png" width="100"
+                    height="100">
+                </a>
+
+                <a href="linkedin link">
+                    <img src=".images/linkedin.png" width="100"
+                    height="100">
+                </a>
+
+                <a href=" link github">
+                    <img src=".images/github.png" width="100"
+                    height="100">
+                </a>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-title">&nbsp;Criado na aula</p>
+        <p>&ensp; Programação Web</p>
+        <p>&emsp; 03/2026 </p>
+        <p><small>&copy;<sup>2026</sup> <sub>Maria Luiza</sub>
+            Todos os direitos reservados. </small></p>
+
+    </footer>
+    </header>
+</body>
+
+</html>
